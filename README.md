@@ -1,5 +1,7 @@
 # ngb-weather
 
+[![Build Status](https://travis-ci.org/nfantone/ngb-weather.svg?branch=develop)](https://travis-ci.org/nfantone/ngb-weather)
+
 > Live coding demo from [ng-baires][ngbaires] June 2017 meetup @ [Globant][globant], Buenos Aires, ARG
 
 A simple Ionic weather app using [DarkSky API][darksky], Cordova [Geolocation plugin][geolocation] and [Google Maps geocoding API][gmaps].
