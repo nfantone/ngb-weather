@@ -1,6 +1,6 @@
 {
   "name": "ngb-weather",
-  "version": "1.0.0",
+  "version": "1.0.1-dev",
   "description": "A simple Ionic weather app",
   "author": "Nicolás Fantone <nfantone@gmail.com> (https://github.com/nfantone)",
   "homepage": "https://www.meetup.com/ng-baires/",
