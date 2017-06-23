@@ -1,0 +1,21 @@
+<ion-grid>
+  <ion-row>
+    <ion-col width-100>
+      <h1>{{data.currently.temperature | number:'.0-0'}}&deg;</h1>
+      <p>
+        <ion-icon name="{{ data.currently.icon | ngbWeathericon }}"></ion-icon> {{data.currently.summary}}
+      </p>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngIf="data.daily.data !== undefined">
+    <ion-col col-4>
+      {{data.daily.data[0].temperatureMax | number:'.0-0'}}&deg;<br> {{data.daily.data[0].temperatureMin | number:'.0-0'}}&deg;
+    </ion-col>
+    <ion-col col-4>
+      {{data.daily.data[1].temperatureMax | number:'.0-0'}}&deg;<br> {{data.daily.data[1].temperatureMin | number:'.0-0'}}&deg;
+    </ion-col>
+    <ion-col col-4>
+      {{data.daily.data[2].temperatureMax | number:'.0-0'}}&deg;<br> {{data.daily.data[2].temperatureMin | number:'.0-0'}}&deg;
+    </ion-col>
+  </ion-row>
+</ion-grid>

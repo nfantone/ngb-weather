@@ -1,11 +1,52 @@
 {
-  "rules": {
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-standard"
+  ],
+  "rules":{
+    "no-switch-case-fall-through": true,
+    "no-string-throw": true,
+
+    "linebreak-style": [true, "LF"],
+    "max-file-line-count": [true, 300],
+    "max-line-length": [true, 100],
+    "no-magic-numbers": [true, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "no-unused-expression": [true, "allow-fast-null-checks"],
+    "no-unused-variable": [false, "check-parameters"],
+    "one-line": [false],
+    "prefer-const": true,
+
+    "array-type": [true, "array"],
+    "interface-name": [true, "never-prefix"],
+    "no-null-keyword": true,
+    "no-require-imports": true,
+    "object-literal-sort-keys": false,
+    "ordered-imports": [false],
+
+    "semicolon": [true, "always"],
+    "space-before-function-paren": [true, "never"],
+    "no-extra-semi": 2,
+    "directive-selector": [true, "attribute", "ngb", "camelCase"],
+    "component-selector": [true, "element", "ngb", "kebab-case"],
+    "use-input-property-decorator": true,
+    "use-output-property-decorator": true,
+    "use-host-property-decorator": true,
+    "no-attribute-parameter-decorator": true,
+    "no-input-rename": true,
+    "no-output-rename": true,
+    "no-forward-ref": true,
     "no-duplicate-variable": true,
-    "no-unused-variable": [
-      true
-    ]
+    "use-life-cycle-interface": true,
+    "use-pipe-transform-interface": true,
+    "pipe-naming": [true, "camelCase", "ngb"],
+    "component-class-suffix": false,
+    "directive-class-suffix": true,
+    "templates-use-public": true,
+    "no-access-missing-member": true,
+    "invoke-injectable": true
   },
   "rulesDirectory": [
-    "node_modules/tslint-eslint-rules/dist/rules"
+    "node_modules/tslint-eslint-rules/dist/rules",
+    "node_modules/codelyzer"
   ]
 }
