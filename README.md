@@ -6,7 +6,7 @@ A simple Ionic weather app using [DarkSky API][darksky], Cordova [Geolocation pl
 
 ## Installation
 
-Clone the repository, install dependencies.
+**Clone** the repository and **install** dependencies.
 
 ```sh
 # Install global dependencies
@@ -61,13 +61,13 @@ ionic serve [-l]
 
 ## Known issues
 
-Due to [security reasons][darksky-cors], DarkSky does not allow CORS requests. The proxy configured in `ionic.config.json` is meant to help during development and _only_ works while serving the app using the CLI (i.e.: `ionic serve`). It **won't work on mobile devices, emulators or Ionic View**. You should set up your own server-side proxy in order to be able to make calls to the forecast API.
+Due to [security reasons][darksky-cors], [DarkSky][darksky] does not allow CORS requests. The proxy configured in `ionic.config.json` is meant to help during development and _only_ works while serving the app using the CLI (i.e.: `ionic serve`). It **won't work on mobile devices, emulators or Ionic View**. You should set up your own server-side proxy in order to be able to make calls to the forecast API.
 
 ## Credits
 
-Credits to [Chris Griffith][chrisgriffith] author of [Mobile App Development with Ionic 2][mobile-app-development] and ng-conf workshop tutor for the original app idea.
+Credits to [Chris Griffith][chrisgriffith] author of _[Mobile App Development with Ionic 2][mobile-app-development]_ and ng-conf workshop tutor for the original app idea.
 
-# LICENSE
+### LICENSE
 MIT
 
 [ngbaires]: https://www.meetup.com/ng-baires/
